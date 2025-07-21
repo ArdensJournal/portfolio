@@ -3,12 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Content Based on Answer</title>
-    <style src="./likefkif.css"></style>
+    <title>Do You Like Me? | Asher's Portfolio</title>
+    <link rel="stylesheet" href="likefkif.css">
 </head>
 <body>
-    <div id="dynamicContent">
-    </div>
+    <header>
+        <h1>Do You Like Me?</h1>
+        <div class="logo-nav-container">
+            <img src="./images/aj.png" alt="ArdensJournal Logo" class="logo">
+            <div class="heart-icon">💕</div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="interaction-section">
+            <div id="dynamicContent" class="content-container">
+                <div class="input-section">
+                    <h2>Tell me how you feel...</h2>
+                    <input type="text" id="userInput" placeholder="Type your answer here...">
+                    <button id="submitButton">Submit</button>
+                </div>
+                <div id="feedback" class="feedback-section"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-logos">
+            <img src="./images/aj.png" alt="ArdensJournal Logo" class="footer-logo">
+            <img src="./images/logo.png" alt="Portfolio Logo" class="footer-logo">
+            <div class="footer-icon">😊</div>
+            <div class="footer-icon">🎭</div>
+        </div>
+        <div class="footer-links">
+            <p>Fun interactive personality test!</p>
+            <p>&copy; 2025 ArdensJournal</p>
+        </div>
+    </footer>
 
     <script src="likefkif.js"></script>
 </body>

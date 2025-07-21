@@ -1,53 +1,275 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    direction: ltr;
+    background: var(--background-gradient);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-}
-
-.container {
-    background-color: #fff;
-    padding: 1.25rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-h1 {
-    margin-bottom: 1.25rem;
-}
-
-form {
+    padding: 0;
     display: flex;
     flex-direction: column;
 }
 
+@keyframes gradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+/* Header Styles */
+header {
+    width: 97.5%;
+    border-top: 1.2rem solid var(--border-top-color);
+    border-left: 1.2rem solid var(--border-left-color);
+    border-bottom: 0.9rem solid var(--border-bottom-color);
+    border-right: 0.9rem solid var(--border-right-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.logo {
+    width: 10rem;
+}
+
+.health-icon {
+    font-size: 3rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.calculator-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.calculator-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+    border: 3px solid var(--border-top-color);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
 label {
-    margin-top: 0.625rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1rem;
 }
 
 input {
-    padding: 0.625rem;
-    margin-top: 0.3125rem;
-    border: 0.0625rem solid #ccc;
-    border-radius: 0.25rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #fff;
 }
 
-button {
-    margin-top: 1.25rem;
-    padding: 0.625rem;
-    background-color: #007BFF;
-    color: white;
+input:focus {
+    border-color: var(--border-top-color);
+    box-shadow: 0 0 10px rgba(221, 177, 1, 0.3);
+    transform: translateY(-2px);
+}
+
+input::placeholder {
+    color: #999;
+}
+
+/* Button Styles */
+#bmiButton {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
     border: none;
-    border-radius: 0.25rem;
+    background-color: var(--search-button-background-color);
+    color: var(--button-text-color);
+    border-top: 0.2rem #f2f2f2 solid;
+    border-left: 0.2rem #f2f2f2 solid;
+    border-right: 0.3rem #cccccc solid;
+    border-bottom: 0.3rem #cccccc solid;
     cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
 }
 
-button:hover {
-    background-color: #0056b3;
+#bmiButton:hover {
+    background-color: var(--hoverMenu-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#bmiButton:active {
+    transform: translateY(0);
+}
+
+/* Result Styles */
+#result {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    border: 2px solid var(--border-top-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--footer-text-color);
+    border-top: 1.2rem solid var(--border-top-color);
+    border-left: 1.2rem solid var(--border-left-color);
+    border-bottom: 0.9rem solid var(--border-bottom-color);
+    border-right: 0.9rem solid var(--border-right-color);
+    width: 93.5%;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.footer-icon {
+    font-size: 2rem;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links p {
+    margin: 0.5rem 0;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Theme Variables */
+:root, [data-theme="dark"] {
+    --background-gradient: linear-gradient(-45deg, #05526e, #0477a1, #7dc7e3, #c2efff);
+    --button-text-color: #1b1a1a;
+    --search-button-background-color: rgba(241, 206, 6, 0.871);
+    --border-top-color: #ddb101;
+    --border-left-color: #ddb101;
+    --border-right-color: #f5d140;
+    --border-bottom-color: #f5d140;
+    --hr-color: #c9a100;
+    --hoverMenu-color: cyan;
+    --text-color: #1b1a1a;
+    --footer-text-color: #333;
+}
+
+[data-theme="dark"] {
+    --text-color: #ffffff;
+    --footer-text-color: #cccccc;
+    --border-top-color: #022a61;
+    --border-left-color: #022a61;
+    --border-right-color: #0043a2;
+    --border-bottom-color: #0043a2;
+    --hr-color: #022a61;
+    --hoverMenu-color: #ffdd33;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        width: 95%;
+        padding: 0.5rem 0;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .calculator-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .health-icon, .footer-icon {
+        font-size: 2rem;
+    }
+    
+    input, #bmiButton {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+    
+    footer {
+        width: 91%;
+    }
+}
+
+.footer-logo {
+    width: 6.25rem;
+    margin: 0 0.5rem;
 }
 
 #result {
