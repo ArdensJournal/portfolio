@@ -1,0 +1,9 @@
+import pandas as pd
+
+# Load the Excel file
+df = pd.read_excel('visitors.xlsx')
+
+# Convert to JSON and save to a file
+df.to_json('visitors.json', orient='records', force_ascii=False)
+
+print("Conversion complete. JSON file saved as 'visitors.json'.")

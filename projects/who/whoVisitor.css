@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+}
+
+nav {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #0056b3;
+}
+
+#add-visitor-form, #visitors-list-container {
+    margin: 2rem;
+}
+
+#add-visitor-form label, #add-visitor-form input {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#add-visitor-form button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#add-visitor-form button:hover {
+    background-color: #218838;
+}
+
+#filtered-workers ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#filtered-workers li {
+    background-color: #f8f9fa;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #dee2e6;
+}
+
+#filtered-workers li button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#filtered-workers li button:hover {
+    background-color: #e0a800;
+}

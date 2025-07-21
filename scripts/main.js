@@ -46,17 +46,79 @@ const projects = [
         technologies: ["HTML", "CSS", "JavaScript"],
         demoUrl: "./projects/artistSearch/searchArtist.html",
         icon: "fas fa-music"
+    },
+    {
+        id: 3,
+        title: "BMI Calculator",
+        type: "Health Calculator",
+        description: "Advanced BMI calculator with health recommendations and visual indicators for body mass index.",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        demoUrl: "./projects/bmiAdvanced/bmiCac.html",
+        icon: "fas fa-weight-scale"
+    },
+    {
+        id: 4,
+        title: "Simple Calculator",
+        type: "JavaScript Exercise",
+        description: "Basic calculator application with standard arithmetic operations and clean interface design.",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        demoUrl: "./projects/simpleCaculator/cac.html",
+        icon: "fas fa-calculator"
+    },
+    {
+        id: 5,
+        title: "FizzBuzz Game",
+        type: "Logic Game",
+        description: "Classic programming challenge turned into an interactive game with visual feedback.",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        demoUrl: "./projects/fizzBuzz/fizzBuzz.html",
+        icon: "fas fa-gamepad"
+    },
+    {
+        id: 6,
+        title: "Leap Year Checker",
+        type: "Date Calculator",
+        description: "Interactive tool to check if any given year is a leap year with educational information.",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        demoUrl: "./projects/leapYear/leapYear.html",
+        icon: "fas fa-calendar"
+    },
+    {
+        id: 7,
+        title: "QR Code Generator",
+        type: "Utility Tool",
+        description: "Generate QR codes for any text or URL with instant preview and download functionality.",
+        technologies: ["Node.js", "HTML", "CSS", "JavaScript"],
+        demoUrl: "./projects/qrGenerator/public/index.html",
+        icon: "fas fa-qrcode"
+    },
+    {
+        id: 8,
+        title: "Chosen One Game",
+        type: "Interactive Game",
+        description: "Fun interactive game with animations and engaging user experience elements.",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        demoUrl: "./projects/chosenOne/chosenOne.html",
+        icon: "fas fa-star"
+    },
+    {
+        id: 9,
+        title: "Like/Dislike App",
+        type: "Interactive App",
+        description: "Interactive application with like/dislike functionality and animated feedback.",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        demoUrl: "./projects/likefkif/likefkif.html",
+        icon: "fas fa-thumbs-up"
+    },
+    {
+        id: 10,
+        title: "Visitor Tracker",
+        type: "Data Application",
+        description: "Application for tracking and managing visitor information with JSON data handling.",
+        technologies: ["HTML", "CSS", "JavaScript", "JSON"],
+        demoUrl: "./projects/who/visitors.html",
+        icon: "fas fa-users"
     }
-    // Example project structure - remove these when you add your real projects
-    // {
-    //     id: 3,
-    //     title: "Calculator App",
-    //     type: "JavaScript Exercise",
-    //     description: "A functional calculator built with HTML, CSS, and JavaScript featuring basic arithmetic operations.",
-    //     technologies: ["HTML", "CSS", "JavaScript"],
-    //     demoUrl: "./projects/calculator/index.html",
-    //     icon: "fas fa-calculator"
-    // }
 ];
 
 // Function to create project cards
