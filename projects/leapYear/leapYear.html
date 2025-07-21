@@ -3,16 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leap Year Checker</title>
+    <title>Leap Year Checker | Asher's Portfolio</title>
     <link rel="stylesheet" href="leapYear.css">
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Leap Year Checker</h1>
-        <input type="number" id="yearInput" placeholder="Enter a year">
-        <button onclick="checkLeapYear()">Check</button>
-        <p id="result"></p>
-    </div>
+        <div class="logo-nav-container">
+            <img src="./images/aj.png" alt="ArdensJournal Logo" class="logo">
+            <div class="calendar-icon">📅</div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="checker-section">
+            <div class="container">
+                <div class="input-group">
+                    <h2>Enter a year to check if it's a leap year</h2>
+                    <input type="number" id="yearInput" placeholder="Enter a year (e.g., 2024)" min="1">
+                    <button onclick="checkLeapYear()" class="check-btn">Check Leap Year</button>
+                </div>
+                <div id="result" class="result-display"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-logos">
+            <img src="./images/aj.png" alt="ArdensJournal Logo" class="footer-logo">
+            <img src="./images/logo.png" alt="Portfolio Logo" class="footer-logo">
+            <div class="footer-icon">🗓️</div>
+            <div class="footer-icon">⏰</div>
+        </div>
+        <div class="footer-links">
+            <p>Discover calendar mysteries!</p>
+            <p>&copy; 2025 ArdensJournal</p>
+        </div>
+    </footer>
+    
     <script src="leapYear.js"></script>
 </body>
 </html>

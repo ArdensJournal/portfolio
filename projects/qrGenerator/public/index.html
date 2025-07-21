@@ -3,21 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QR Code Generator</title>
+  <title>QR Code Generator | Asher's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>QR Code Generator</h1>
-    <form id="urlForm">
-      <label for="urlInput">Type in your URL:</label>
-      <input type="text" id="urlInput" name="URL" required>
-      <button type="submit">Generate QR Code</button>
-    </form>
-    <div id="qrCodeContainer">
-      <!-- QR Code will be displayed here -->
+    <div class="logo-nav-container">
+      <img src="../images/aj.png" alt="ArdensJournal Logo" class="logo">
+      <div class="qr-icon">📱</div>
     </div>
-  </div>
-  <script src="script.js"></script>
+  </header>
+  
+  <main>
+    <section class="generator-section">
+      <div class="container">
+        <div class="input-group">
+          <h2>Generate QR Code for any URL</h2>
+          <form id="urlForm">
+            <label for="urlInput">Enter your URL:</label>
+            <input type="url" id="urlInput" name="URL" placeholder="https://example.com" required>
+            <button type="submit" class="generate-btn">Generate QR Code</button>
+          </form>
+        </div>
+        
+        <div id="qrCodeContainer" class="qr-display">
+          <div class="placeholder">
+            <div class="qr-placeholder">📱</div>
+            <p>Your QR code will appear here</p>
+          </div>
+        </div>
+        
+        <div id="downloadSection" class="download-section" style="display: none;">
+          <button id="downloadBtn" class="download-btn">Download QR Code</button>
+          <p class="download-info">Right-click the QR code to save it</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer-logos">
+      <img src="../images/aj.png" alt="ArdensJournal Logo" class="footer-logo">
+      <img src="../images/logo.png" alt="Portfolio Logo" class="footer-logo">
+      <div class="footer-icon">🔗</div>
+      <div class="footer-icon">📲</div>
+    </div>
+    <div class="footer-links">
+      <p>Convert URLs to QR codes instantly!</p>
+      <p>&copy; 2025 ArdensJournal</p>
+    </div>
+  </footer>
+  
+  <script src="scripts.js"></script>
 </body>
 </html>

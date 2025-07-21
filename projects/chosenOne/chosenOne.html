@@ -3,21 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who's Paying?</title>
+    <title>The Chosen One | Asher's Portfolio</title>
     <link rel="stylesheet" href="chosenOne.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Who's Paying?</h1>
-        <input type="text" id="nameInput" placeholder="Enter a name">
-        <button onclick="addName()">Add Name</button>
-        <ul id="namesList"></ul>
-        <input type="text" id="taskInput" placeholder="Enter a task">
-        <button id="taskButton" onclick="whosDoingTask()">Who's Chosen?</button>
-        <button onclick="resetPage()">Reset</button>
-        <p id="result"></p>
-        <img id="keanuGif" src="" alt="Keanu Reeves" style="display:none;">
-    </div>
+    <header>
+        <h1>The Chosen One</h1>
+        <div class="logo-nav-container">
+            <img src="./images/aj.png" alt="ArdensJournal Logo" class="logo">
+            <div class="magic-icon">🎯</div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="selector-section">
+            <div class="container">
+                <div class="input-group">
+                    <h2>Who's going to be chosen?</h2>
+                    <div class="name-input-section">
+                        <input type="text" id="nameInput" placeholder="Enter a name">
+                        <button onclick="addName()" class="add-btn">Add Name</button>
+                    </div>
+                    <ul id="namesList" class="names-list"></ul>
+                </div>
+                
+                <div class="task-group">
+                    <input type="text" id="taskInput" placeholder="What task? (default: paying)">
+                    <button id="taskButton" onclick="whosDoingTask()" class="main-btn">Who's Chosen?</button>
+                    <button onclick="resetPage()" class="reset-btn">Reset</button>
+                </div>
+                
+                <div id="resultSection" class="result-section">
+                    <p id="result"></p>
+                    <img id="keanuGif" src="" alt="The Chosen One" class="chosen-gif">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-logos">
+            <img src="./images/aj.png" alt="ArdensJournal Logo" class="footer-logo">
+            <img src="./images/logo.png" alt="Portfolio Logo" class="footer-logo">
+            <div class="footer-icon">🎲</div>
+            <div class="footer-icon">⭐</div>
+        </div>
+        <div class="footer-links">
+            <p>Random selection made fun!</p>
+            <p>&copy; 2025 ArdensJournal</p>
+        </div>
+    </footer>
+    
     <script src="chosenOne.js"></script>
 </body>
 </html>

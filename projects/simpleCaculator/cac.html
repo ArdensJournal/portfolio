@@ -3,24 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator</title>
+    <title>Simple Calculator | Asher's Portfolio</title>
     <link rel="stylesheet" href="cac.css">
 </head>
 <body>
-    <div class="calculator" id="calculator">
-        <button id="toggleLangBtn">Switch to Hebrew</button>
-        <h1 id="title">Simple Calculator</h1>
-        <input type="number" id="num1" placeholder="Enter first number">
-        <select id="operator">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">*</option>
-            <option value="/">/</option>
-        </select>
-        <input type="number" id="num2" placeholder="Enter second number">
-        <button id="calculateBtn">Calculate</button>
-        <div id="result" class="result">Result will be displayed here</div>
-    </div>
+    <header>
+        <h1>Simple Calculator</h1>
+        <div class="logo-nav-container">
+            <img src="./images/aj.png" alt="ArdensJournal Logo" class="logo">
+            <div class="calc-icon">🔢</div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="calculator-section">
+            <div class="calculator" id="calculator">
+                <div class="language-toggle">
+                    <button id="toggleLangBtn" class="lang-btn">Switch to Hebrew</button>
+                </div>
+                
+                <div class="calc-container">
+                    <h2 id="title">Mathematical Operations</h2>
+                    
+                    <div class="input-group">
+                        <input type="number" id="num1" placeholder="Enter first number" step="any">
+                        <select id="operator" class="operator-select">
+                            <option value="+">+ Addition</option>
+                            <option value="-">- Subtraction</option>
+                            <option value="*">× Multiplication</option>
+                            <option value="/">÷ Division</option>
+                        </select>
+                        <input type="number" id="num2" placeholder="Enter second number" step="any">
+                    </div>
+                    
+                    <button id="calculateBtn" class="calculate-btn">Calculate Result</button>
+                    
+                    <div id="result" class="result">
+                        <span class="result-label">Result:</span>
+                        <span class="result-value">Ready for calculation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-logos">
+            <img src="./images/aj.png" alt="ArdensJournal Logo" class="footer-logo">
+            <img src="./images/logo.png" alt="Portfolio Logo" class="footer-logo">
+            <div class="footer-icon">🧮</div>
+            <div class="footer-icon">📊</div>
+        </div>
+        <div class="footer-links">
+            <p>Powerful math made simple!</p>
+            <p>&copy; 2025 ArdensJournal</p>
+        </div>
+    </footer>
+    
     <script src="cac.js"></script>
 </body>
+</html>
 </html>

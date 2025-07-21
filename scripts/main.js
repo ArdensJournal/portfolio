@@ -109,15 +109,6 @@ const projects = [
         technologies: ["HTML", "CSS", "JavaScript"],
         demoUrl: "./projects/likefkif/likefkif.html",
         icon: "fas fa-thumbs-up"
-    },
-    {
-        id: 10,
-        title: "Visitor Tracker",
-        type: "Data Application",
-        description: "Application for tracking and managing visitor information with JSON data handling.",
-        technologies: ["HTML", "CSS", "JavaScript", "JSON"],
-        demoUrl: "./projects/who/visitors.html",
-        icon: "fas fa-users"
     }
 ];
 
