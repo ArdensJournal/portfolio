@@ -37,10 +37,19 @@ const projects = [
         technologies: ["HTML", "CSS", "JavaScript"],
         demoUrl: "./projects/love-caculator/index.html",
         icon: "fas fa-heart"
+    },
+    {
+        id: 2,
+        title: "Artist Search",
+        type: "Web Application",
+        description: "Interactive artist information website featuring detailed artist profiles, albums, and related artists.",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        demoUrl: "./projects/artistSearch/searchArtist.html",
+        icon: "fas fa-music"
     }
     // Example project structure - remove these when you add your real projects
     // {
-    //     id: 2,
+    //     id: 3,
     //     title: "Calculator App",
     //     type: "JavaScript Exercise",
     //     description: "A functional calculator built with HTML, CSS, and JavaScript featuring basic arithmetic operations.",
