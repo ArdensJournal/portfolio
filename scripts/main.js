@@ -109,7 +109,17 @@ const projects = [
         technologies: ["HTML", "CSS", "JavaScript"],
         demoUrl: "./projects/likefkif/likefkif.html",
         icon: "fas fa-thumbs-up"
-    }
+    },
+    {
+        id: 10,
+        title: "Dice Game",
+        type: "Interactive Game",
+        description: "Two-player dice rolling game with custom player names, animations, and winner celebration effects.",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        demoUrl: "./projects/dice-game/dicee.html",
+        icon: "fas fa-dice"
+    },
+
 ];
 
 // Function to create project cards
