@@ -118,8 +118,7 @@ const projects = [
         technologies: ["HTML", "CSS", "JavaScript"],
         demoUrl: "./projects/dice-game/dicee.html",
         icon: "fas fa-dice"
-    },
-
+    }
 ];
 
 // Function to create project cards
