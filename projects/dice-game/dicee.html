@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game | Ardens Journal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Dice Game</h1>
+        <div class="logo-nav-container">
+            <img src="images/aj.png" alt="ArdensJournal Logo" class="logo">
+            <div class="game-icon">🎲</div>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Name Input Section -->
+        <section class="name-input-section">
+            <div class="name-inputs">
+                <div class="player-input">
+                    <label for="player1Name">Player 1 Name:</label>
+                    <input type="text" id="player1Name" placeholder="Enter Player 1 name" maxlength="15">
+                </div>
+                <div class="player-input">
+                    <label for="player2Name">Player 2 Name:</label>
+                    <input type="text" id="player2Name" placeholder="Enter Player 2 name" maxlength="15">
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Section -->
+        <section class="game-section">
+            <div class="dice-container">
+                <div class="dice">
+                    <p id="player1Display">Player 1</p>
+                    <img class="img1" src="images/dice6.png" alt="Player 1 Dice" />
+                </div>
+
+                <div class="dice">
+                    <p id="player2Display">Player 2</p>
+                    <img class="img2" src="images/dice6.png" alt="Player 2 Dice" />
+                </div>
+            </div>
+            
+            <div class="result-container">
+                <h2 class="result">🎲 Enter names and click 'Roll Dice' to Start!</h2>
+            </div>
+            
+            <button class="btn">Roll Dice</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logos">
+                <img src="images/aj.png" alt="ArdensJournal" class="footer-logo">
+                <img src="images/logo.png" alt="Dice Game" class="footer-logo">
+            </div>
+            <p>&copy; 2025 ArdensJournal. All rights reserved. 🎲 🎮</p>
+        </div>
+    </footer>
+
+    <script src="dicee.js"></script>
+</body>
+</html>
